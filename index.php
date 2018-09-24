@@ -73,7 +73,7 @@
     echo "Hello ".NAME_STUDENT."<br>";
 
     // отладочные функции: print_r() - выв. значение переменной, Var_dump() - инфо о переменной и ее тип
-    echo "<pre>";
+    echo "<pre>"; //
     print_r($arr);
     Var_dump($arr);
 
@@ -99,8 +99,24 @@
     $l =100;
     if(($v>26 && $v<$m)
         || ($v ==25 && $l ==100 && $m == 70)){
-        echo "OK";
+        echo "OK"."<br>"."<br>";
     }
+
+    //foreach
+    $arr123  = [
+      'color'=>'red',
+        'age'=>25,
+        'nickname'=>'Max'
+    ];
+
+    foreach ($arr123 as $item){ ///!!!!!!!!!!!
+        echo $item."<br>";
+    }
+
+foreach ($arr123 as $key => $item){ ///!!!!!!!!!!!
+    echo "<pre>"; // разбивает на строки элементы массива, иначевсе в одну строку
+    echo "\$arr123[key]=>&item"."<br>";
+}
 ?>
 
 
